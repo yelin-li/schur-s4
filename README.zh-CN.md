@@ -2,7 +2,7 @@
 
 [English README](README.md)
 
-本仓库用 **Lean 4.33.1（不需要 Mathlib）** 完整机器核验了经典结论：
+本仓库用 **Lean 4.33.1（只依赖工具链自带的 `Std`，不需要 Mathlib）** 完整机器核验了经典结论：
 
 > **S(4) = 44**：`{1,…,44}` 可以用 4 种颜色染色而不出现单色 `x+y=z`；
 > 而 `{1,…,45}` 无论怎么染都一定会出现。
@@ -99,6 +99,26 @@ theorem four_colors_exact :
 即：除了 Lean 逻辑的标准公理，唯一被信任的是"编译器忠实地求值了这三个封闭的
 `Bool` 表达式"。搜索算法的正确性、两条对称性约化、组合引理、`[1,44]` 着色的检查，
 全部在内核中完成。没有外部 SAT 求解器、没有 LRAT/DRAT 证书、没有外部数据文件。
+
+## 依赖
+
+**没有外部依赖**，只需 Lean 工具链本身：
+
+| 检查 | 结果 |
+|---|---|
+| `lakefile.toml` | 没有 `require` 语句 |
+| `lake-manifest.json`（Lake 锁文件） | `"packages": []` |
+| 仓库内所有 `import` | 只有 `Std`（Lean 4.33.1 自带）或本仓库自己的文件 |
+| 外部 SAT 求解器 / 证书检查器 / 下载数据 | 无 |
+
+因此 `lake build` 不从网络解析任何包，只会拉取 `lean-toolchain` 里固定的工具链版本，**与 Mathlib 无关**。一行即可自查：
+
+```bash
+cat lake-manifest.json     # => {"version": ..., "packages": [], ...}
+grep -rn '^import' *.lean  # => Std 或本地模块
+```
+
+CI 也印证这一点：`kernel` 与 `certificate` 两个 job 都在一分钟内跑完；若依赖 Mathlib（数 GB、需 `lake exe cache get`）不可能如此。
 
 ## 复现
 
