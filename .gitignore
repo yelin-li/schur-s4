@@ -1,11 +1,10 @@
-# Lean build artifacts
+﻿# Lean build artifacts
 .lake/
 *.olean
 *.ilean
 *.trace
 *.c
 *.hash
-lake-manifest.json
 
 # editor / OS
 .vscode/
