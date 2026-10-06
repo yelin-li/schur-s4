@@ -1,0 +1,22 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='360' viewBox='0 0 900 360' role='img' aria-label='effect of the symmetry reductions on the search tree'>
+<rect width='900' height='360' fill='#ffffff'/>
+<text x='50' y='30' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='15' fill='#1f2933' text-anchor='start' font-weight='600' >Search tree below [1,45] with 4 colours (nodes visited)</text>
+<text x='50' y='46' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='11' fill='#7b8794' text-anchor='start' font-weight='normal' >smaller is better; the last bar is the part actually verified in Lean</text>
+<rect x='290' y='60' width='420.0' height='40' fill='#e4e7eb' stroke='none' stroke-width='1' rx='3'/>
+<text x='278' y='84.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='end' font-weight='normal' >no symmetry breaking</text>
+<text x='718.0' y='84.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >5,300,623,637</text>
+<text x='296' y='92' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='9' fill='#ffffff' text-anchor='start' font-weight='normal' >measure.js none</text>
+<rect x='290' y='122' width='210.00000005942692' height='40' fill='#90cdf4' stroke='none' stroke-width='1' rx='3'/>
+<text x='278' y='146.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='end' font-weight='normal' >colour of 1 fixed to 0</text>
+<text x='508.00000005942695' y='146.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >1,325,155,910</text>
+<text x='296' y='154' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='9' fill='#ffffff' text-anchor='start' font-weight='normal' >measure.js c1</text>
+<rect x='290' y='184' width='121.2435567471192' height='40' fill='#2b6cb0' stroke='none' stroke-width='1' rx='3'/>
+<text x='278' y='208.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='end' font-weight='normal' >first two colours fixed to 0,1</text>
+<text x='419.2435567471192' y='208.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >441,718,638</text>
+<text x='296' y='216' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='9' fill='#7b8794' text-anchor='start' font-weight='normal' >measure.js A</text>
+<rect x='290' y='246' width='85.73214173332698' height='40' fill='#276749' stroke='none' stroke-width='1' rx='3'/>
+<text x='278' y='270.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='end' font-weight='normal' >+ transposition (2 3)  (verified)</text>
+<text x='383.732141733327' y='270.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >220,859,322</text>
+<text x='296' y='278' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='9' fill='#7b8794' text-anchor='start' font-weight='normal' >measure.js AB</text>
+<text x='718' y='326.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='11' fill='#276749' text-anchor='start' font-weight='600' >24× smaller than no symmetry</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='430' viewBox='0 0 900 430' role='img' aria-label='nodes visited per search depth'>
+<rect width='900' height='430' fill='#ffffff'/>
+<text x='70' y='28' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='15' fill='#1f2933' text-anchor='start' font-weight='600' >Verified search: states visited per depth (sum = 220,859,323)</text>
+<text x='70' y='44' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='11' fill='#7b8794' text-anchor='start' font-weight='normal' >4 colours, colours of 1 and 2 fixed to 0,1, transposition (2 3) applied</text>
+<line x1='70' y1='375.0' x2='870' y2='375.0' stroke='#e4e7eb' stroke-width='1'/>
+<text x='62' y='379.0' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='end' font-weight='normal' >1</text>
+<line x1='70' y1='332.091693663797' x2='870' y2='332.091693663797' stroke='#e4e7eb' stroke-width='1'/>
+<text x='62' y='336.091693663797' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='end' font-weight='normal' >10</text>
+<line x1='70' y1='289.18338732759406' x2='870' y2='289.18338732759406' stroke='#e4e7eb' stroke-width='1'/>
+<text x='62' y='293.18338732759406' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='end' font-weight='normal' >100</text>
+<line x1='70' y1='246.27508099139106' x2='870' y2='246.27508099139106' stroke='#e4e7eb' stroke-width='1'/>
+<text x='62' y='250.27508099139106' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='end' font-weight='normal' >1,000</text>
+<line x1='70' y1='203.3667746551881' x2='870' y2='203.3667746551881' stroke='#e4e7eb' stroke-width='1'/>
+<text x='62' y='207.3667746551881' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='end' font-weight='normal' >10,000</text>
+<line x1='70' y1='160.4584683189851' x2='870' y2='160.4584683189851' stroke='#e4e7eb' stroke-width='1'/>
+<text x='62' y='164.4584683189851' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='end' font-weight='normal' >100,000</text>
+<line x1='70' y1='117.55016198278213' x2='870' y2='117.55016198278213' stroke='#e4e7eb' stroke-width='1'/>
+<text x='62' y='121.55016198278213' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='end' font-weight='normal' >1,000,000</text>
+<line x1='70' y1='74.64185564657919' x2='870' y2='74.64185564657919' stroke='#e4e7eb' stroke-width='1'/>
+<text x='62' y='78.64185564657919' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='end' font-weight='normal' >10,000,000</text>
+<line x1='70' y1='50' x2='70' y2='375' stroke='#7b8794' stroke-width='1'/>
+<line x1='70' y1='375' x2='870' y2='375' stroke='#7b8794' stroke-width='1'/>
+<text x='62' y='40' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='11' fill='#7b8794' text-anchor='end' font-weight='normal' >nodes</text>
+<line x1='70.0' y1='375' x2='70.0' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='70.0' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >0</text>
+<line x1='155.1063829787234' y1='375' x2='155.1063829787234' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='155.1063829787234' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >5</text>
+<line x1='240.2127659574468' y1='375' x2='240.2127659574468' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='240.2127659574468' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >10</text>
+<line x1='325.3191489361702' y1='375' x2='325.3191489361702' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='325.3191489361702' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >15</text>
+<line x1='410.4255319148936' y1='375' x2='410.4255319148936' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='410.4255319148936' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >20</text>
+<line x1='495.531914893617' y1='375' x2='495.531914893617' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='495.531914893617' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >25</text>
+<line x1='580.6382978723404' y1='375' x2='580.6382978723404' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='580.6382978723404' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >30</text>
+<line x1='665.7446808510638' y1='375' x2='665.7446808510638' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='665.7446808510638' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >35</text>
+<line x1='750.8510638297872' y1='375' x2='750.8510638297872' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='750.8510638297872' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >40</text>
+<line x1='835.9574468085107' y1='375' x2='835.9574468085107' y2='379' stroke='#7b8794' stroke-width='1'/>
+<text x='835.9574468085107' y='393' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#7b8794' text-anchor='middle' font-weight='normal' >45</text>
+<text x='470.0' y='413' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='11' fill='#7b8794' text-anchor='middle' font-weight='normal' >depth  (integers coloured)</text>
+<polygon points='70,375 70.0,375.0 87.02127659574468,375.0 104.04255319148936,375.0 121.06382978723404,375.0 138.08510638297872,354.5275350429752 155.1063829787234,341.6108477726392 172.12765957446808,320.13084876179335 189.14893617021278,300.66591785858964 206.17021276595744,278.1268361008309 223.19148936170214,262.17648743834786 240.2127659574468,240.07164660296385 257.2340425531915,226.02758666213802 274.25531914893617,206.78071369611726 291.2765957446809,191.86364537941915 308.29787234042556,173.7565744145431 325.3191489361702,161.35340574112755 342.3404255319149,143.59742007932516 359.3617021276596,134.2267755496438 376.3829787234043,119.10094719052927 393.4042553191489,108.81997242845586 410.4255319148936,95.05285072203486 427.4468085106383,92.5134005831577 444.468085106383,78.97673106193565 461.48936170212767,76.99811091133233 478.51063829787233,68.15145880693854 495.531914893617,63.66322276842931 512.5531914893618,60.59967954193928 529.5744680851064,62.54479578638444 546.5957446808511,58.758442745140826 563.6170212765958,61.357804857572376 580.6382978723404,63.36094417646615 597.6595744680851,64.20166938084986 614.6808510638298,69.616980015899 631.7021276595744,76.71705710286415 648.7234042553192,80.35060185393513 665.7446808510638,88.23822936749951 682.7659574468086,96.57437741280273 699.7872340425532,104.78072043777513 716.8085106382978,121.16629178520148 733.8297872340426,131.08785841356178 750.8510638297872,135.56373138321473 767.872340425532,151.61948770937292 784.8936170212766,165.94802867431446 801.9148936170212,168.2295056591682 818.936170212766,169.505968871765 835.9574468085107,270.4683868559601 852.9787234042553,375 870,375' fill='#90cdf4' opacity='0.55'/>
+<polyline points='70.0,375.0 87.02127659574468,375.0 104.04255319148936,375.0 121.06382978723404,375.0 138.08510638297872,354.5275350429752 155.1063829787234,341.6108477726392 172.12765957446808,320.13084876179335 189.14893617021278,300.66591785858964 206.17021276595744,278.1268361008309 223.19148936170214,262.17648743834786 240.2127659574468,240.07164660296385 257.2340425531915,226.02758666213802 274.25531914893617,206.78071369611726 291.2765957446809,191.86364537941915 308.29787234042556,173.7565744145431 325.3191489361702,161.35340574112755 342.3404255319149,143.59742007932516 359.3617021276596,134.2267755496438 376.3829787234043,119.10094719052927 393.4042553191489,108.81997242845586 410.4255319148936,95.05285072203486 427.4468085106383,92.5134005831577 444.468085106383,78.97673106193565 461.48936170212767,76.99811091133233 478.51063829787233,68.15145880693854 495.531914893617,63.66322276842931 512.5531914893618,60.59967954193928 529.5744680851064,62.54479578638444 546.5957446808511,58.758442745140826 563.6170212765958,61.357804857572376 580.6382978723404,63.36094417646615 597.6595744680851,64.20166938084986 614.6808510638298,69.616980015899 631.7021276595744,76.71705710286415 648.7234042553192,80.35060185393513 665.7446808510638,88.23822936749951 682.7659574468086,96.57437741280273 699.7872340425532,104.78072043777513 716.8085106382978,121.16629178520148 733.8297872340426,131.08785841356178 750.8510638297872,135.56373138321473 767.872340425532,151.61948770937292 784.8936170212766,165.94802867431446 801.9148936170212,168.2295056591682 818.936170212766,169.505968871765 835.9574468085107,270.4683868559601 852.9787234042553,375' fill='none' stroke='#2b6cb0' stroke-width='2'/>
+<circle cx='546.6' cy='58.8' r='3.5' fill='#c05621'/>
+<text x='546.5957446808511' y='48.758442745140826' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#c05621' text-anchor='middle' font-weight='normal' >peak: 23,451,523 states at depth 28</text>
+<circle cx='836.0' cy='270.5' r='3.5' fill='#c05621'/>
+<text x='829.9574468085107' y='260.4683868559601' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#c05621' text-anchor='end' font-weight='normal' >273 states at depth 45 = the valid 4-colourings of [1,44]</text>
+<text x='870' y='407' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#c05621' text-anchor='end' font-weight='normal' >depth 45 = no full colouring</text>
+</svg>

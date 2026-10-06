@@ -1,0 +1,54 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='940' height='420' viewBox='0 0 940 420' role='img' aria-label='proof pipeline'>
+<rect width='940' height='420' fill='#ffffff'/>
+<text x='40' y='30' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='15' fill='#1f2933' text-anchor='start' font-weight='600' >Proof pipeline: from definitions to S(4) = 44</text>
+<defs><marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M 0 0 L 10 5 L 0 10 z' fill='#7b8794'/></marker></defs>
+<rect x='40' y='60' width='200' height='76' fill='#90cdf4' stroke='#2b6cb0' stroke-width='1.5' rx='8'/>
+<text x='52' y='82' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >Schur.lean</text>
+<text x='52' y='100' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >Good, checkGood, extendOk</text>
+<text x='52' y='114' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >search, search_spec</text>
+<text x='52' y='128' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >S(1), S(2), S(3)</text>
+<rect x='290' y='60' width='200' height='76' fill='#90cdf4' stroke='#2b6cb0' stroke-width='1.5' rx='8'/>
+<text x='302' y='82' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >Symmetry.lean</text>
+<text x='302' y='100' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >12 permutations, lookup_ok</text>
+<text x='302' y='114' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >exists_good_first_two</text>
+<text x='302' y='128' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >(12-fold reduction)</text>
+<rect x='540' y='60' width='200' height='76' fill='#90cdf4' stroke='#2b6cb0' stroke-width='1.5' rx='8'/>
+<text x='552' y='82' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >RuleB.lean</text>
+<text x='552' y='100' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >swap23, Ok23, searchB</text>
+<text x='552' y='114' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >searchB_spec, ok23_disj</text>
+<text x='552' y='128' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >exists_good_first_two_ok23</text>
+<rect x='790' y='60' width='120' height='76' fill='#90cdf4' stroke='#2b6cb0' stroke-width='1.5' rx='8'/>
+<text x='802' y='82' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >SchurData.lean</text>
+<text x='802' y='100' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >explicit</text>
+<text x='802' y='114' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >colourings</text>
+<text x='802' y='128' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >(generated)</text>
+<rect x='40' y='210' width='200' height='76' fill='#fbd38d' stroke='#c05621' stroke-width='1.5' rx='8'/>
+<text x='52' y='232' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >BranchB0/1/2.lean</text>
+<text x='52' y='250' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >three native_decide runs</text>
+<text x='52' y='264' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >47M / 96M / 78M states</text>
+<rect x='290' y='210' width='200' height='76' fill='#90cdf4' stroke='#2b6cb0' stroke-width='1.5' rx='8'/>
+<text x='302' y='232' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >searchB_false_of_three</text>
+<text x='302' y='250' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >kernel-checked</text>
+<text x='302' y='264' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >combination of the</text>
+<text x='302' y='278' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >three branch verdicts</text>
+<rect x='540' y='210' width='200' height='76' fill='#90cdf4' stroke='#2b6cb0' stroke-width='1.5' rx='8'/>
+<text x='552' y='232' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >RuleB.searchB_prefix_43</text>
+<text x='552' y='250' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >no good colouring of</text>
+<text x='552' y='264' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >length 45 starts with 0,1</text>
+<text x='552' y='278' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >after relabelling</text>
+<rect x='790' y='210' width='120' height='76' fill='#9ae6b4' stroke='#276749' stroke-width='1.5' rx='8'/>
+<text x='802' y='232' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#1f2933' text-anchor='start' font-weight='600' >S4.lean</text>
+<text x='802' y='250' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >no_good_four_45</text>
+<text x='802' y='264' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >four_colors_exact</text>
+<text x='802' y='278' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='10' fill='#1f2933' text-anchor='start' font-weight='normal' >S(4) = 44</text>
+<line x1='140' y1='136' x2='140' y2='210' stroke='#7b8794' stroke-width='1.4' marker-end='url(#arrow)'/>
+<line x1='340' y1='136' x2='330' y2='210' stroke='#7b8794' stroke-width='1.4' marker-end='url(#arrow)'/>
+<line x1='240' y1='248' x2='290' y2='248' stroke='#7b8794' stroke-width='1.4' marker-end='url(#arrow)'/>
+<line x1='490' y1='248' x2='540' y2='248' stroke='#7b8794' stroke-width='1.4' marker-end='url(#arrow)'/>
+<line x1='740' y1='248' x2='790' y2='248' stroke='#7b8794' stroke-width='1.4' marker-end='url(#arrow)'/>
+<line x1='640' y1='136' x2='620' y2='210' stroke='#7b8794' stroke-width='1.4' marker-end='url(#arrow)'/>
+<line x1='850' y1='136' x2='850' y2='210' stroke='#7b8794' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='40' y='330' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='11' fill='#7b8794' text-anchor='start' font-weight='normal' >The only non-kernel steps are the three orange boxes: closed evaluations of a search function whose specification is proved.</text>
+<text x='40' y='350' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='11' fill='#7b8794' text-anchor='start' font-weight='normal' >Independent cross-checks: bench/reference_search.js (JavaScript) and bench/verify_coloring.py (Python).</text>
+<text x='40' y='370' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' font-size='11' fill='#7b8794' text-anchor='start' font-weight='normal' >Inputs the search is applied to (colourings of [1,44], [1,536], …) are verified twice: by brute force and inside Lean.</text>
+</svg>

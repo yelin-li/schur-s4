@@ -1,0 +1,7 @@
+# Normalise line endings so the repository is checkout-independent, and tell
+# GitHub that the certificate file is generated data.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.svg text
+*.rup text
+CertificateS3.lean linguist-generated=true

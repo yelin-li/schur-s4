@@ -1,0 +1,61 @@
+name = "schur-s4"
+version = "1.1.0"
+defaultTargets = ["Statement"]
+
+# Kernel-checked core: definitions, the proved search specification, the two
+# symmetry reductions, and the explicit colourings.
+[[lean_lib]]
+name = "SchurData"
+
+[[lean_lib]]
+name = "Schur"
+
+[[lean_lib]]
+name = "Fin4"
+
+[[lean_lib]]
+name = "Symmetry"
+
+[[lean_lib]]
+name = "RuleB"
+
+# The three verified branches of the exhaustive search.  Each one runs a long
+# `native_decide` (roughly 10-20 minutes), they are independent, and `lake`
+# builds them in parallel.
+[[lean_lib]]
+name = "BranchB0"
+
+[[lean_lib]]
+name = "BranchB1"
+
+[[lean_lib]]
+name = "BranchB2"
+
+# Assembly: `no_good_four_45` and `four_colors_exact` (S(4) = 44).
+[[lean_lib]]
+name = "S4"
+
+# Readable restatement of the result (S4_statement, S4_all_shorter).
+[[lean_lib]]
+name = "Statement"
+
+# Prints the axiom/trust base of the main theorems.
+[[lean_lib]]
+name = "Verify"
+
+# Certificate path: a verified checker for resolution refutations, and the
+# S(3) instance checked with it.  Independent of the `native_decide` branches
+# above; see docs/CERTIFICATES.md.
+[[lean_lib]]
+name = "Resolution"
+
+[[lean_lib]]
+name = "CertificateS3"
+
+[[lean_lib]]
+name = "CertCheckS3"
+
+# The structural encoding of the S(3) CNF and the completeness direction:
+# `forcing_three_certified : Schur.Forcing 3 14` from the checked certificate.
+[[lean_lib]]
+name = "Encoding"
