@@ -3,28 +3,44 @@
 [![Lean](https://img.shields.io/badge/Lean-4.33.1-blue)](https://lean-lang.org/)
 [![Mathlib](https://img.shields.io/badge/Mathlib-not%20required-lightgrey)](https://leanprover-community.github.io/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![CI](https://github.com/yelin-li/schur-s4/actions/workflows/lean.yml/badge.svg)](https://github.com/yelin-li/schur-s4/actions/workflows/lean.yml)
 
-This repository contains a **complete machine-checked proof of the classical
-Schur-number result**
+**Abstract.** This repository formalises the classical result **S(4) = 44** in
+Lean 4 (Std only, no Mathlib): `{1, …, 44}` admits a colouring with no
+monochromatic solution of `x + y = z`, while `{1, …, 45}` admits none.  The
+headline theorem is stated with explicit lengths in
+[`Statement.lean`](Statement.lean).
 
-> **S(4) = 44**, i.e. `{1, …, 44}` can be coloured with 4 colours without a
-> monochromatic solution of `x + y = z`, but `{1, …, 45}` cannot.
+The proof is a *verified search* rather than a trusted computation.  The search
+function has a kernel-checked specification (`searchB_spec`), and two symmetry
+reductions are proved and used to shrink the space: fixing the first colour, then
+the first two colours, then the transposition `(2 3)` rule.  Exhaustive
+exploration drops from 5 300 623 637 states to 220 859 322; the remaining search
+is split into three independent branches (588 s, 1183 s, 959 s) whose verdicts
+are combined by a proved lemma.  Independent JavaScript and Python cross-checks
+reproduce the search tree and the published count of 273 colourings of
+`[1, 44]`.  An attractive pruning rule was shown unsound by 344 counterexamples
+and is documented as such.
 
-The lower bound is an explicit colouring (Baumert–Golomb 1965).  The upper bound
-is a **verified exhaustive search**: the search algorithm, its specification and
-the symmetry reductions used to shrink the search space are all *theorems* in
-Lean 4; the only non-kernel steps are three closed `native_decide` evaluations
-of disjoint parts of the search tree.
+[`Verify.lean`](Verify.lean) prints the trust base: the specification lemmas,
+both reductions and the explicit `[1, 44]` colouring use only Lean's standard
+axioms; the three branch verdicts add one `native_decide` axiom each.
+[`docs/RIGOR.md`](docs/RIGOR.md) audits what that costs and how to remove it.
 
-```lean
--- S4.lean
-theorem no_good_four_45 : ¬ ∃ t : List (Fin 4), t.length = 45 ∧ Good t
-theorem four_colors_exact :
-    (∃ t : List (Fin 4), t.length = 44 ∧ Good t) ∧ Forcing 4 45
-```
+A second track narrows that boundary.  A CDCL SAT solver written from scratch for
+this repository refutes the `S(4)` instance in 214 490 conflicts (about 12 s) and
+emits a 34 MB RUP certificate verified by two independent checkers.  Expanded
+into explicit resolution steps, the same pipeline is accepted by a *proved* Lean
+checker for the `S(3)` instance, where an encoding lemma yields
+`forcing_three_certified : Schur.Forcing 3 14`.  The checks caught two real bugs
+(unregistered learned unit clauses; an ALO/AMO order mismatch).
 
-Everything is checked with **Lean 4.33.1 alone** — no Mathlib, no external SAT
-solver, no LRAT/DRAT certificate, no downloaded data.
+The `S(4)` certificate is **not yet Lean-checked**: its 4 584 737 hints expand to
+roughly 4.6 M resolution steps, so the `S(4)` trust base is unchanged.  Closing
+that gap needs a proved RUP checker in Lean; only its soundness proof is missing.
+Nothing is claimed about `S(6)`.
+
+![certificate pipeline](docs/figures/certificate_pipeline.svg)
 
 If you are here to audit rather than to read, start with
 [`docs/RIGOR.md`](docs/RIGOR.md): it separates what the kernel checks, the one
@@ -287,8 +303,7 @@ investigation of `S(6)`; they are *not* used by anything in the `S(4)` proof).
   Lean yet (expanding it would need ≈ 4.6 M resolution steps), so **the `S(4)`
   trust base is unchanged**.  Status, measurements and next steps:
   [`docs/CERTIFICATES.md`](docs/CERTIFICATES.md), audit:
-  [`docs/RIGOR.md`](docs/RIGOR.md) §8.
-* **`S(6)` is not touched here.**  The value of `S(6)` is a famous open problem;
+  [`docs/RIGOR.md`](docs/RIGOR.md) §8.* **`S(6)` is not touched here.**  The value of `S(6)` is a famous open problem;
   only `536 ≤ S(6) ≤ 1927` is known.  This repository is about `S(4)` only.
 * The window-based pruning rule that "every 14 consecutive integers use all four
   colours" is **false** as a consequence of `S(3) = 13`; see
